@@ -17,7 +17,7 @@ export const ComponentShowcase: React.FC<ComponentShowcaseProps> = memo(({
   const customStyle = getElementStyle(elementId);
   return <motion.div {...ANIMATION_VARIANTS.fadeInUp} transition={{
     duration: 0.5
-  }} className={`${CARD_CLASSES.GLASS} ${CARD_CLASSES.PADDING_LG} mb-6 group relative ${customStyle.classes || ''}`} role="region" aria-label={title} onClick={e => e.shiftKey && handleElementClick(e, {
+  }} className={`${CARD_CLASSES.GLASS} ${CARD_CLASSES.PADDING_LG} mb-6 group relative ${customStyle.classes || ''}`} style={customStyle.style || {}} role="region" aria-label={title} onClick={e => e.shiftKey && handleElementClick(e, {
     type: 'Component',
     id: elementId,
     classes: `${CARD_CLASSES.GLASS} ${CARD_CLASSES.PADDING_LG} mb-6`,

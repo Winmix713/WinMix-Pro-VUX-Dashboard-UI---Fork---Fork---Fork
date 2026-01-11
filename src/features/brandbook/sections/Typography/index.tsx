@@ -60,7 +60,7 @@ export const Typography: React.FC = () => {
             delay: index * 0.1
           }} whileHover={{
             scale: 1.02
-          }} className={`${CARD_CLASSES.GLASS} p-5 sm:p-6 cursor-pointer group relative ${customStyle.classes || ''}`} onClick={e => e.shiftKey && handleElementClick(e, {
+          }} className={`${CARD_CLASSES.GLASS} p-5 sm:p-6 cursor-pointer group relative ${customStyle.classes || ''}`} style={customStyle.style || {}} onClick={e => e.shiftKey && handleElementClick(e, {
             type: 'Component',
             id: elementId,
             classes: `${CARD_CLASSES.GLASS} p-5 sm:p-6`,
@@ -125,7 +125,7 @@ export const Typography: React.FC = () => {
             delay: index * 0.05
           }} whileHover={{
             x: 4
-          }} className={`flex items-start gap-3 pb-4 border-b border-white/5 last:border-0 group relative ${customStyle.classes || ''}`} onClick={e => e.shiftKey && handleElementClick(e, {
+          }} className={`flex items-start gap-3 pb-4 border-b border-white/5 last:border-0 group relative ${customStyle.classes || ''}`} style={customStyle.style || {}} onClick={e => e.shiftKey && handleElementClick(e, {
             type: 'Component',
             id: elementId,
             classes: 'flex items-start gap-3 pb-4 border-b border-white/5',
